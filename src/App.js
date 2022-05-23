@@ -1,8 +1,9 @@
 import React from 'react'
+import './App.css'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='underline text-3xl'>App</div>
   )
 }
 
