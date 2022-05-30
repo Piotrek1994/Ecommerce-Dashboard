@@ -217,7 +217,8 @@ export const areaCustomSeries = [
     name: 'USA',
     opacity: '0.8',
     type: 'SplineArea',
-    width: '2',
+    width: '2'
+    
 
   },
   {
