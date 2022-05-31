@@ -27,25 +27,20 @@ import './App.css'
 import { useStateContext } from './contexts/ContextProvider'
 
 const App = () => {
-	const {activeMenu, themeSettings, setThemeSettings, currentColor, currentMode} = useStateContext()
-
-
-
-
-	
+	const { activeMenu, themeSettings, setThemeSettings, currentColor, currentMode } = useStateContext()
 
 	return (
-		
-
-
-
 		<div className={currentMode === 'Dark' ? 'dark' : ''}>
 			<BrowserRouter>
 				<div className='flex relative dark:bg-main-dark-bg'>
 					<div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
 						<TooltipComponent content='Settings' position='Top'>
-							<button type='button' className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' onClick={() => setThemeSettings(true)} style={{background: currentColor, borderRadius: '50%'}} >
-							<FiSettings />
+							<button
+								type='button'
+								className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
+								onClick={() => setThemeSettings(true)}
+								style={{ background: currentColor, borderRadius: '50%' }}>
+								<FiSettings />
 							</button>
 						</TooltipComponent>
 					</div>
@@ -68,10 +63,8 @@ const App = () => {
 							<Navbar />
 						</div>
 
-						
 						<div>
-							{themeSettings && <ThemeSettings/>}
-
+							{themeSettings && <ThemeSettings />}
 
 							<Routes>
 								{/* dashboard  */}
@@ -94,10 +87,6 @@ const App = () => {
 								<Route path='/area' element={<Area />} />
 								<Route path='/bar' element={<Bar />} />
 								<Route path='/pie' element={<Pie />} />
-								<Route path='/financial' element={<Financial />} />
-								<Route path='/color-mapping' element={<ColorMapping />} />
-								<Route path='/pyramid' element={<Pyramid />} />
-								<Route path='/stacked' element={<Stacked />} />
 							</Routes>
 						</div>
 					</div>
@@ -108,5 +97,3 @@ const App = () => {
 }
 
 export default App
-
-
