@@ -17,7 +17,7 @@ const Ecommerce = () => {
 					<div className='flex justify-between items-center'>
 						<div>
 							<p className='font-bold text-gray-400'>Earnings</p>
-							<p className='text-2xl'>$34 403</p>
+							<p className='text-2xl'>$34,403</p>
 						</div>
 					</div>
 					<div className='mt-6'>
@@ -55,7 +55,7 @@ const Ecommerce = () => {
 								<span>
 									<GoPrimitiveDot />
 								</span>
-								<span>Expense</span>
+								<span>Expenses</span>
 							</p>
 							<p className='flex items-center gap-2 text-green-400 hover:drop-shadow-xl'>
 								<span>
@@ -81,7 +81,7 @@ const Ecommerce = () => {
 								<p>
 									<span className='text-3xl font-semibold'>$39,342</span>
 								</p>
-								<p className='text-gray-500 mt-1'>Expense</p>
+								<p className='text-gray-500 mt-1'>Expenses</p>
 							</div>
 							<div className='mt-5'>
 								<SparkLine 
